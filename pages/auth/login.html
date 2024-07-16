@@ -13,9 +13,14 @@
           <h2>Login</h2>
 
           <!-- form start -->
-          <form action="">
-            <input type="email" placeholder="email" class="input" />
-            <input type="password" placeholder="password" class="input"/>
+          <form id="login-form">
+            <input type="email" placeholder="email" class="input" id="email" />
+            <input
+              type="password"
+              placeholder="password"
+              class="input"
+              id="password"
+            />
 
             <!-- remember me & forgot password start -->
             <div id="help">
@@ -29,7 +34,7 @@
             </div>
             <!-- remember me & forgot password end -->
 
-            <input type="submit" value="Login" class="submit"/>
+            <input type="submit" value="Login" class="submit" />
           </form>
           <!-- form end -->
 
@@ -62,5 +67,8 @@
         </div>
       </div>
     </main>
+
+    <script src="../../script/auth/login.js"></script>
+    <script src="../../script/auth/dummyData.js"></script>
   </body>
 </html>
