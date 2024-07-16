@@ -1,6 +1,10 @@
-body {
+body,
+html {
   font-family: "Roboto", sans-serif;
   margin: 0;
+  height: 100%;
+  display: flex;
+  justify-content: center;
 }
 
 main {
@@ -10,21 +14,60 @@ main {
 /* main start */
 
 .container {
+  width: 100%;
+  min-height: 100%;
   display: flex;
-  gap: 2rem;
+  gap: 8rem;
   justify-content: space-between;
+  align-items: center;
+}
+
+/* kiri start */
+
+#kiri {
+  width: 40rem;
+  max-width: 40rem;
+}
+
+#kiri h2 {
+  font-size: 2rem;
 }
 
 #kiri form {
   display: flex;
   flex-direction: column;
+  gap: 1rem;
 }
+
+/* form start */
+
+#kiri .input {
+  padding: 1rem 0.8rem;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+#kiri .submit {
+  padding: 0.8rem;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+/* form end */
 
 /* remember me dan forgot password start */
 
 #help {
   display: flex;
-  gap: 2rem;
+  justify-content: space-between;
 }
 
 #remember-me {
@@ -99,10 +142,17 @@ main {
 
 /* kiri end */
 
+/* kanan start */
+
 #kanan {
   background-color: #d9d9d9;
-  width: 22rem;
-  height: 30rem;
+  height: 42rem;
+  width: 100%;
+  height: 100%;
+  max-width: 38rem;
+  max-height: 42rem;
+  padding: 1rem;
+  box-sizing: border-box;
 
   /* menengahkah gambar */
   display: flex;
@@ -113,7 +163,68 @@ main {
 }
 
 #kanan img {
-  width: 20rem;
+  width: 100%;
+  max-width: 35rem;
+  height: auto;
 }
 
+/* kanan end */
+
 /* main end */
+
+/* Media Queries for Responsiveness */
+@media (max-width: 1200px) {
+  main {
+    padding: 10px 5rem;
+  }
+
+  .container {
+    gap: 4rem;
+  }
+}
+
+@media (max-width: 992px) {
+  .container {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+  }
+
+  main {
+    padding: 0;
+  }
+
+  #kiri .input,
+  #kiri .submit {
+    padding: 0.8rem 0.8rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #kiri {
+    width: 100%;
+    width: 30rem;
+    max-width: 30rem;
+    box-sizing: border-box;
+  }
+
+  #kiri h2 {
+    font-size: 1.5rem;
+  }
+
+  .container {
+    gap: 1rem;
+  }
+
+  #kanan {
+    display: none; /* Hide the image on smaller screens */
+  }
+}
+
+@media (max-width: 650px) {
+  #kiri {
+    width: 100%;
+    max-width: 30rem;
+  }
+}
