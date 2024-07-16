@@ -1,0 +1,127 @@
+body,
+html {
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+  height: 100%;
+}
+
+main {
+  padding: 0 10rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.container {
+  padding: 4rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+
+  border: black 1px solid;
+}
+
+.container h2 {
+  margin: 0;
+  font-size: 2rem;
+}
+
+/* hilangkan arrow naik turun angka start */
+
+/* Hide the arrows on Chrome, Safari, Edge, and Opera */
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Hide the arrows on Firefox */
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+/* hilangkan arrow naik turun angka end */
+
+.input {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.input input {
+  padding: 3rem 1.5rem;
+  font-size: 2rem;
+  text-align: center;
+}
+
+.verify {
+  width: 100%;
+  padding: 1rem;
+  font-size: 1.2rem;
+  background-color: #007bff;
+  border: none;
+  color: white;
+  border-radius: 4px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+@media (max-width: 820px) {
+  main {
+    padding: 0 2rem;
+  }
+
+  .container {
+    padding: 2rem;
+    border: none;
+  }
+
+  .container h2 {
+    font-size: 1.5rem;
+  }
+
+  .input {
+    flex-direction: row;
+    gap: 0.5rem;
+  }
+
+  .input input {
+    padding: 1.5rem;
+    font-size: 1.5rem;
+  }
+
+  .verify {
+    font-size: 1rem;
+    padding: 0.8rem;
+  }
+
+  form {
+    gap: 1rem;
+  }
+}
+
+@media (max-width: 600px) {
+  main {
+    padding: 0 1rem;
+  }
+
+  .container {
+    padding: 1rem;
+    border: none;
+  }
+
+  .input input {
+    padding: 1.8rem 1rem;
+    font-size: 1rem;
+    text-align: center;
+  }
+}
