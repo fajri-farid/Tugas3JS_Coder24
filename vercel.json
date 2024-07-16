@@ -2,7 +2,7 @@
   "routes": [
     { "src": "/", "dest": "/pages/auth/login.html" },
     { "src": "/", "dest": "/pages/auth/register.html" },
-    { "src": "/", "dest": "/pages/auth/auth.html" },
+    { "src": "/", "dest": "/pages/auth/register-auth.html" },
     { "src": "/home", "dest": "/pages/main/home.html" },
     { "src": "/about", "dest": "/pages/main/about.html" },
     { "src": "/contact", "dest": "/pages/main/contact.html" }
