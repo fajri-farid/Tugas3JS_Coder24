@@ -1,0 +1,185 @@
+/* Intinya ini itu uktuk
+  - Body, supaya rata semua
+  - header/navbar
+  - footer
+*/
+
+body {
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+}
+
+main {
+  padding: 10px 10rem;
+}
+
+.navbar {
+  border-bottom: 1.2px solid black;
+  padding: 0.5rem 0;
+  margin: 0;
+  background-color: #ffffff;
+}
+
+.navbar .nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 6rem;
+}
+
+#kanan {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+#kanan p {
+  font-weight: 700;
+  font-size: 1.2rem;
+}
+
+#kanan img {
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: black;
+  margin-bottom: 5px;
+  font-size: 1.1rem;
+}
+
+.navbar a:hover {
+  color: blue;
+}
+
+#kiri {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+#kiri i {
+  font-size: 1.5rem;
+}
+
+.nav .mode-toggle-main {
+  color: #000000;
+}
+
+.side-navbar .mode-toggle-sidebar {
+  color: rgb(255, 251, 251);
+}
+
+/* Responsive Navbar */
+.fa-bars {
+  display: none;
+  font-size: 28px;
+  cursor: pointer;
+}
+
+.side-navbar {
+  display: none;
+  flex-direction: column;
+  align-items: flex-start;
+  position: fixed;
+  top: 0;
+  right: -100%;
+  width: 250px;
+  height: 100vh;
+  background-color: #011627;
+  padding: 20px;
+  transition: right 0.3s ease;
+  z-index: 1000;
+}
+
+.side-navbar a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.side-navbar .fa-xmark {
+  font-size: 28px;
+  cursor: pointer;
+  color: rgb(255, 255, 255);
+  /* background-color: #011627; */
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+
+@media (max-width: 1000px) {
+  .navbar .nav {
+    padding: 0 2rem;
+  }
+
+  #kiri {
+    display: none;
+  }
+
+  .fa-bars {
+    display: block;
+  }
+
+  .side-navbar {
+    display: flex;
+  }
+
+  .side-navbar.menu-active {
+    right: 0;
+  }
+}
+
+hr {
+  border-width: 2px;
+}
+
+footer {
+  text-align: center;
+}
+
+@media screen and (max-width: 600px) {
+  main {
+    padding: 10px 30px;
+  }
+}
+
+/* dark mode */
+.dark-mode .navbar {
+  background-color: #121212;
+  border-bottom: 1.2px solid rgb(255, 255, 255);
+}
+
+.dark-mode .navbar .nav a {
+  color: rgb(255, 255, 255);
+}
+
+.dark-mode #modeToggle.fa-sun {
+  color: white;
+}
+
+.dark-mode .side-navbar {
+  background-color: rgb(255, 254, 254);
+}
+
+.dark-mode .navbar a {
+  color: rgb(4, 4, 4);
+}
+
+.dark-mode .side-navbar .fa-xmark {
+  color: rgb(0, 0, 0);
+}
+
+.side-navbar .mode-toggle-sidebar {
+  font-size: 2rem;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+.dark-mode .menuIcon {
+  color: white;
+}

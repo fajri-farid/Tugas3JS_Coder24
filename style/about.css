@@ -1,0 +1,82 @@
+#aboutme {
+  margin: 0.5rem 2rem;
+}
+
+#aboutme p {
+  font-size: 1.2rem;
+  line-height: 1.5;
+}
+
+#sosmed {
+  text-align: center;
+}
+
+.infor {
+  display: flex;
+  gap: 5rem;
+  margin-bottom: 2rem;
+  align-items: center;
+}
+
+.infor img {
+  width: 15rem;
+  margin-bottom: 10px;
+}
+
+.infor .kanan {
+  margin-bottom: 0;
+}
+
+.kanan h2 {
+  margin-bottom: 1rem;
+}
+
+.kanan p {
+  margin-bottom: 0;
+}
+
+@media (max-width: 1000px) {
+  .infor {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .infor img {
+    height: auto;
+    width: 100%;
+  }
+}
+
+.medsos {
+  font-size: 30px;
+}
+
+.medsos i {
+  padding-left: 10px;
+}
+
+.medsos a {
+  color: black;
+}
+
+.medsos i:hover {
+  transform: scale(1.1);
+}
+
+h1 {
+  text-align: center;
+}
+
+/* dark mode */
+body.dark-mode {
+  background-color: #121212;
+  color: #fff;
+}
+
+body.dark-mode p {
+  color: #fff;
+}
+
+body.dark-mode .medsos a {
+  color: rgb(255, 255, 255);
+}
