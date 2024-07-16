@@ -1,7 +1,10 @@
 {
   "routes": [
-    { "src": "/", "dest": "/home.html" },
-    { "src": "/about", "dest": "/about.html" },
-    { "src": "/contact", "dest": "/contact.html" }
+    { "src": "/", "dest": "/pages/auth/login.html" },
+    { "src": "/", "dest": "/pages/auth/register.html" },
+    { "src": "/", "dest": "/pages/auth/auth.html" },
+    { "src": "/home", "dest": "/pages/main/home.html" },
+    { "src": "/about", "dest": "/pages/main/about.html" },
+    { "src": "/contact", "dest": "/pages/main/contact.html" }
   ]
 }
