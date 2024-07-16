@@ -1,0 +1,262 @@
+body,
+html {
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+main {
+  padding: 10px 10rem;
+}
+
+/* main start */
+
+.container {
+  width: 100%;
+  min-height: 100%;
+  display: flex;
+  gap: 8rem;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* kiri start */
+
+#kiri {
+  display: flex;
+  flex-direction: column;
+  width: 40rem;
+  max-width: 40rem;
+  gap: 1.2rem;
+}
+
+#kiri h2 {
+  font-size: 2rem;
+}
+
+#kiri form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+/* form start */
+
+#kiri .input {
+  padding: 1rem 0.8rem;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+#kiri .submit {
+  padding: 0.8rem;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+/* form end */
+
+/* remember me dan forgot password start */
+
+#help {
+  display: flex;
+  justify-content: space-between;
+}
+
+#remember-me {
+  display: flex;
+  gap: 0.5rem;
+}
+
+#forgot-password {
+  display: flex;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#forgot-password a {
+  text-decoration: none;
+  color: #fc0000;
+}
+
+#remember-me input[type="checkbox"] {
+  transform: scale(1.5);
+}
+
+/* remember me dan forgot password end */
+
+#kiri p {
+  text-align: center;
+}
+
+/* or login with style start */
+.divider {
+  display: flex;
+  align-items: center;
+}
+
+.divider span {
+  flex-grow: 1;
+  height: 1px;
+  background-color: #ccc;
+}
+
+.divider p {
+  margin: 0 10px;
+}
+
+#kiri a {
+  text-decoration: none;
+  color: #fc0000;
+}
+
+/* or login with style start */
+
+/* Login with start */
+#login-with {
+  margin-top: 1rem;
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.account {
+  border: 1px solid rgb(42, 123, 255);
+  border-radius: 8px;
+  width: 100%;
+  height: 35px;
+  padding: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+#login-with img {
+  width: 1.5rem;
+}
+
+/* Login with end */
+
+/* kiri end */
+
+/* kanan start */
+
+#kanan {
+  background-color: #d9d9d9;
+  height: 42rem;
+  width: 100%;
+  height: 100%;
+  max-width: 38rem;
+  max-height: 42rem;
+  padding: 1rem;
+  box-sizing: border-box;
+
+  /* menengahkah gambar */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 10px;
+}
+
+#kanan img {
+  width: 100%;
+  max-width: 35rem;
+  height: auto;
+}
+
+/* kanan end */
+
+/* main end */
+
+/* Media Queries for Responsiveness */
+@media (max-width: 1200px) {
+  main {
+    padding: 10px 5rem;
+  }
+
+  .container {
+    gap: 4rem;
+  }
+
+  #kiri {
+    display: flex;
+    flex-direction: column;
+    width: 50rem;
+    max-width: 50rem;
+    gap: 0.6rem;
+  }
+
+  #kanan {
+    background-color: #d9d9d9;
+    height: 42rem;
+    max-width: 28rem;
+    max-height: 30rem;
+    padding: 1rem;
+    box-sizing: border-box;
+  }
+
+  #kanan img {
+    width: 100%;
+    max-width: 25rem;
+    height: auto;
+  }
+}
+
+@media (max-width: 992px) {
+  .container {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+  }
+
+  main {
+    padding: 0;
+  }
+
+  #kiri .input,
+  #kiri .submit {
+    padding: 0.8rem 0.8rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #kiri {
+    width: 100%;
+    width: 30rem;
+    max-width: 30rem;
+    box-sizing: border-box;
+  }
+
+  #kiri h2 {
+    font-size: 1.5rem;
+  }
+
+  .container {
+    gap: 1rem;
+  }
+
+  #kanan {
+    display: none; /* Hide the image on smaller screens */
+  }
+}
+
+@media (max-width: 650px) {
+  #kiri {
+    width: 100%;
+    max-width: 30rem;
+  }
+}
