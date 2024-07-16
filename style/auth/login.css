@@ -1,0 +1,119 @@
+body {
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+}
+
+main {
+  padding: 10px 10rem;
+}
+
+/* main start */
+
+.container {
+  display: flex;
+  gap: 2rem;
+  justify-content: space-between;
+}
+
+#kiri form {
+  display: flex;
+  flex-direction: column;
+}
+
+/* remember me dan forgot password start */
+
+#help {
+  display: flex;
+  gap: 2rem;
+}
+
+#remember-me {
+  display: flex;
+}
+
+#forgot-password {
+  display: flex;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#forgot-password a {
+  text-decoration: none;
+  color: #fc0000;
+}
+
+/* remember me dan forgot password end */
+
+#kiri p {
+  text-align: center;
+}
+
+/* or login with style start */
+.divider {
+  display: flex;
+  align-items: center;
+}
+
+.divider span {
+  flex-grow: 1;
+  height: 1px;
+  background-color: #ccc;
+}
+
+.divider p {
+  margin: 0 10px;
+}
+
+#kiri a {
+  text-decoration: none;
+  color: #fc0000;
+}
+
+/* or login with style start */
+
+/* Login with start */
+#login-with {
+  margin-top: 1rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.account {
+  border: 1px solid rgb(42, 123, 255);
+  border-radius: 8px;
+  width: 48px;
+  height: 48px;
+  padding: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+#login-with img {
+  width: 2rem;
+}
+
+/* Login with end */
+
+/* kiri end */
+
+#kanan {
+  background-color: #d9d9d9;
+  width: 22rem;
+  height: 30rem;
+
+  /* menengahkah gambar */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 10px;
+}
+
+#kanan img {
+  width: 20rem;
+}
+
+/* main end */
