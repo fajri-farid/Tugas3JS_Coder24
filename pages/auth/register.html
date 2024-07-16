@@ -16,28 +16,56 @@
           <h2>Register</h2>
 
           <!-- form start -->
-          <form action="">
+          <form id="registrationForm">
             <div class="name">
-              <input type="text" placeholder="first name" class="input2" />
-              <input type="text" placeholder="last name" class="input2" />
+              <input
+                type="text"
+                id="firstName"
+                placeholder="first name"
+                class="input2"
+                required
+              />
+              <input
+                type="text"
+                id="lastName"
+                placeholder="last name"
+                class="input2"
+                required
+              />
             </div>
-            <input type="email" placeholder="email" class="input" />
-            <input type="password" placeholder="password" class="input" />
-            <input type="password" placeholder="password" class="input" />
+            <input
+              type="email"
+              id="email"
+              placeholder="email"
+              class="input"
+              required
+            />
+            <input
+              type="password"
+              id="password"
+              placeholder="password"
+              class="input"
+              required
+            />
+            <input
+              type="password"
+              id="confirmPassword"
+              placeholder="confirm password"
+              class="input"
+              required
+            />
 
-            <!-- remember me & forgot password start -->
             <div id="help">
               <div id="remember-me">
-                <input type="checkbox" />
+                <input type="checkbox" id="agreeCheckbox" required />
                 <p>
                   I agree to all the <span>Terms</span> and
                   <span>Privacy Policies</span>
                 </p>
               </div>
             </div>
-            <!-- remember me & forgot password end -->
 
-            <input type="submit" value="Regist" class="submit" />
+            <input type="submit" value="Register" class="submit" />
           </form>
           <!-- form end -->
 
@@ -65,5 +93,7 @@
         </div>
       </div>
     </main>
+
+    <script src="../../script/auth/register.js"></script>
   </body>
 </html>
