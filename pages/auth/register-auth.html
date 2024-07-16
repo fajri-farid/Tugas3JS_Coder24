@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../../style/auth/register-auth.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <main>
+      <div class="container">
+        <h2>Verify your email address</h2>
+        <p>
+          We emailed you a four-digit code to your email. Enter the code below
+          to confirm your email address
+        </p>
+        <form action="">
+          <div class="input">
+            <input type="number" id="digit1" min="0" max="9" required />
+            <input type="number" id="digit2" min="0" max="9" required />
+            <input type="number" id="digit3" min="0" max="9" required />
+            <input type="number" id="digit4" min="0" max="9" required />
+          </div>
+
+          <input type="submit" value="verify" class="verify" />
+        </form>
+      </div>
+    </main>
+
+    <script src="../../script/auth/register-auth.js"></script>
+  </body>
+</html>
