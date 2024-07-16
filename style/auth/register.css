@@ -1,3 +1,7 @@
+/* !important */
+/* untuk menghemat waktu ini css nya copas dari login */
+/* jika sempat akan saya rapihkan penamaannya*/
+
 body,
 html {
   font-family: "Roboto", sans-serif;
@@ -53,6 +57,20 @@ main {
   box-sizing: border-box;
 }
 
+.name {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.name .input2 {
+  flex: 1;
+  padding: 1rem 0.8rem;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
 #kiri .submit {
   padding: 1rem 0.8rem;
   background-color: #007bff;
@@ -79,15 +97,7 @@ main {
   gap: 0.5rem;
 }
 
-#forgot-password {
-  display: flex;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-#forgot-password a {
-  text-decoration: none;
+#remember-me span {
   color: #fc0000;
 }
 
@@ -181,8 +191,6 @@ main {
 /* kanan end */
 
 /* main end */
-
-/* Media Queries for Responsiveness */
 @media (max-width: 1200px) {
   main {
     padding: 10px 5rem;
@@ -251,7 +259,7 @@ main {
   }
 
   #kanan {
-    display: none; /* Hide the image on smaller screens */
+    display: none;
   }
 }
 
@@ -259,5 +267,11 @@ main {
   #kiri {
     width: 100%;
     max-width: 30rem;
+  }
+
+  .name {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
   }
 }
